@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:messages id="m1"/>
+      <af:form id="f1">
+        <af:pageTemplate viewId="/templates/tns_template.jspx" id="pt1">
+          <f:facet name="Top"/>
+          <f:facet name="top"/>
+          <f:facet name="left"/>
+          <f:facet name="Heade"/>
+          <f:facet name="Left"/>
+          <f:facet name="Content"/>
+          <f:facet name="centerFacet"/>
+          <f:facet name="center">
+            <af:panelGridLayout id="pgl1">
+              <af:gridRow marginTop="5px" height="auto" id="gr2">
+                <af:gridCell marginStart="5px" width="50%" id="gc3">
+                  <af:inputText label="Label 1" id="it1"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" marginEnd="5px" width="50%"
+                             id="gc4">
+                  <af:inputText label="Label 2" id="it2"/>
+                </af:gridCell>
+              </af:gridRow>
+              <af:gridRow marginTop="5px" marginBottom="5px" height="auto"
+                          id="gr1">
+                <af:gridCell marginStart="5px" width="50%" id="gc1">
+                  <af:inputNumberSpinbox label="Label 1" id="ins1"/>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" marginEnd="5px" width="50%"
+                             id="gc2"/>
+              </af:gridRow>
+            </af:panelGridLayout>
+          </f:facet>
+        </af:pageTemplate>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

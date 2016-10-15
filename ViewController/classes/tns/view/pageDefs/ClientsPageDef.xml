@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93" id="ClientsPageDef"
+                Package="tns.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="VO_Clients1" RangeSize="25"
+              DataControl="AppModuleDataControl1" id="VO_Clients1Iterator"/>
+    <iterator Binds="VO_Customers1" RangeSize="25"
+              DataControl="AppModuleDataControl1" id="VO_Customers1Iterator"/>
+  </executables>
+  <bindings>
+    <action IterBinding="VO_Clients1Iterator" id="CreateInsert"
+            RequiresUpdateModel="true" Action="createInsertRow"/>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="ClientId">
+      <AttrNames>
+        <Item Value="ClientId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="ClientNo">
+      <AttrNames>
+        <Item Value="ClientNo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="ClientType">
+      <AttrNames>
+        <Item Value="ClientType"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="ClientName">
+      <AttrNames>
+        <Item Value="ClientName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="AddressLine1">
+      <AttrNames>
+        <Item Value="AddressLine1"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="AddressLine2">
+      <AttrNames>
+        <Item Value="AddressLine2"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="City">
+      <AttrNames>
+        <Item Value="City"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="Country">
+      <AttrNames>
+        <Item Value="Country"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="ZipCode">
+      <AttrNames>
+        <Item Value="ZipCode"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="PhoneNo">
+      <AttrNames>
+        <Item Value="PhoneNo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="MobileNo">
+      <AttrNames>
+        <Item Value="MobileNo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="EmailAddress">
+      <AttrNames>
+        <Item Value="EmailAddress"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="NtnNo">
+      <AttrNames>
+        <Item Value="NtnNo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="CnicNo">
+      <AttrNames>
+        <Item Value="CnicNo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="FederalTaxPayerId">
+      <AttrNames>
+        <Item Value="FederalTaxPayerId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator"
+                     id="ProvincialTaxPayerId">
+      <AttrNames>
+        <Item Value="ProvincialTaxPayerId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Clients1Iterator" id="CustomerId">
+      <AttrNames>
+        <Item Value="CustomerId"/>
+      </AttrNames>
+    </attributeValues>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction"
+            DataControl="AppModuleDataControl1"/>
+    <action IterBinding="VO_Clients1Iterator" id="Delete"
+            RequiresUpdateModel="false" Action="removeCurrentRow"/>
+    <attributeValues IterBinding="VO_Customers1Iterator" id="AddressLine11">
+      <AttrNames>
+        <Item Value="AddressLine1"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VO_Customers1Iterator" id="AddressLine21">
+      <AttrNames>
+        <Item Value="AddressLine2"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

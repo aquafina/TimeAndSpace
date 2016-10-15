@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <af:pageTemplateDef var="attrs">
+    <af:xmlContent>
+      <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+        <display-name>tns_template</display-name>
+        <facet>
+          <facet-name>
+            Top
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            top
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            left
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            Heade
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            Left
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            Content
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            centerFacet
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            center
+          </facet-name>
+        </facet>
+      </component>
+    </af:xmlContent>
+    <af:panelStretchLayout id="pt_psl1" startWidth="171px" bottomHeight="37px"
+                           topHeight="64px">
+      <f:facet name="center">
+        <af:facetRef facetName="center"/>
+      </f:facet>
+      <f:facet name="start">
+        <af:panelGroupLayout id="pt_pgl2" layout="vertical"
+                             inlineStyle="padding-top:15%; padding-left:10%; border-color:Black;">
+          <af:outputText value="Electronic Media" id="pt_ot1"
+                         inlineStyle="font-weight:bold; font-size:15.0px;"/>
+          <af:goButton text="Media Plan" id="pt_gl1"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"/>
+          <af:goButton text="Release Order" id="pt_gl2"
+                     inlineStyle="margin-left:20px; font-weight:bold; font-size:12px;margin-top:5px;"/>
+          <af:goButton text="Customer Invoice" id="pt_gl3"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"/>
+          <af:separator id="pt_s1"/>
+          <af:outputText value="Print Media" id="pt_ot2"
+                         inlineStyle="font-weight:bold; font-size:15.0px;"/>
+          <af:goButton text="Media Plan" id="pt_gl4"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"/>
+          <af:goButton text="Release Order" id="goLink5"
+                     inlineStyle="margin-left:20px; font-weight:bold; font-size:12px;margin-top:5px;"/>
+          <af:goButton text="Customer Invoice" id="goLink6"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"/>
+          <af:separator id="pt_s2"/>
+          <af:outputText value="Functional Admin" id="pt_ot3"
+                         inlineStyle="font-weight:bold; font-size:15.0px;"/>
+          <af:goButton text="Customers" id="pt_gl5"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"
+                       destination="/faces/Customers.jspx"/>
+          <af:goButton text="Clients" id="pt_gl6"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"
+                       destination="/faces/Clients.jspx"/>
+          <af:goButton text="Suppliers" id="pt_gl7"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"
+                       destination="/faces/Suppliers.jspx"/>
+          <af:goButton text="Channels" id="pt_gl8"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"/>
+          <af:goButton text="Brands" id="pt_gl9"
+                     inlineStyle="font-weight:bold; margin-left:20px; font-size:12px;margin-top:5px;"/>
+          <af:separator id="pt_s3"/>
+          <af:outputText value="System Admin" id="pt_ot4"
+                         inlineStyle="font-weight:bold; font-size:15.0px;"/>
+          <af:goButton text="Users" id="pt_gl10"
+                     inlineStyle="font-weight:bold; margin-left: 20px;font-size:12px;margin-top:5px;"/>
+        </af:panelGroupLayout>
+      </f:facet>
+      <f:facet name="top">
+        <af:panelGroupLayout layout="vertical"
+                             xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                             id="pt_pgl1">
+          <af:panelGroupLayout layout="vertical"
+                               xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                               id="pgl4" inlineStyle="background-color:white;">
+            <af:image source="/oracle_fusion_logo.png" id="i1" visible="false"/>
+            <af:panelGroupLayout id="pgl5"
+                                 inlineStyle="width:100%; margin:10px;">
+              <af:image source="/oracle_fusion_logo.png" id="i2"
+                        inlineStyle="margin:5px;"/>
+            </af:panelGroupLayout>
+            <af:panelGroupLayout id="pgl6"
+                                 inlineStyle="background-color:Navy; height:35px; width:100%; margin:3.0px;"
+                                 layout="horizontal" valign="middle">
+              <af:outputText value="LBS Media Management System" id="ot1"
+                             inlineStyle="background-color:Navy; color:White; padding:5px; font-weight:bold;"/>
+            </af:panelGroupLayout>
+            <af:spacer width="10" height="10" id="s2"/>
+          </af:panelGroupLayout>
+        </af:panelGroupLayout>
+      </f:facet>
+    </af:panelStretchLayout>
+  </af:pageTemplateDef>
+</jsp:root>

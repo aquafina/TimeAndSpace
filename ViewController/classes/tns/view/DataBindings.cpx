@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false"
+             Package="tns.view" ClientType="Generic">
+  <pageMap>
+    <page path="/Customers.jspx" usageId="tns_view_CustomersPageDef"/>
+    <page path="/Clients.jspx" usageId="tns_view_ClientsPageDef"/>
+    <page path="/Customers.jspx" usageId="tns_view_CustomerPageDef"/>
+    <page path="/Suppliers.jspx" usageId="tns_view_SuppliersPageDef"/>
+    <page path="/test.jspx" usageId="tns_view_testPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="tns_view_CustomersPageDef"
+          path="tns.view.pageDefs.CustomersPageDef"/>
+    <page id="tns_view_ClientsPageDef" path="tns.view.pageDefs.ClientsPageDef"/>
+    <page id="tns_view_CustomerPageDef"
+          path="tns.view.pageDefs.CustomerPageDef"/>
+    <page id="tns_view_SuppliersPageDef"
+          path="tns.view.pageDefs.SuppliersPageDef"/>
+    <page id="tns_view_testPageDef" path="tns.view.pageDefs.testPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl1" Package="tns.model.AM"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true"
+                     Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
